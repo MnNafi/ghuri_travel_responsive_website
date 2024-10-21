@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Input with Dropdown Calendar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            padding: 50px;
+        }
+
+        .date-input-container {
+            position: relative;
+            width: 250px;
+        }
+
+        input[type="date"] {
+            width: 100%;
+            padding: 10px 15px;
+            font-size: 16px;
+            border: 2px solid #4CAF50;
+            border-radius: 8px;
+            background-color: white;
+            color: #333;
+            appearance: none;
+            /* Remove default styling */
+            -webkit-appearance: none;
+            /* For Safari */
+            background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNCIgaGVpZ2h0PSIxNCIgdmlld0JveD0iMCAwIDE0IDE0Ij4KICAgIDxwYXRoIGZpbGw9IiM2NjYiIGQ9Ik0xMy4zMSAxLjlMMTMgMS41bC00Ljc4IDQuNzctLjI1LjE4LS4yMy0uMTItNS01LjA4LS4zNS0uMzUtLjMyLS4wMi0uMzQuMDFNMTQuMDAgNi44MkwxMi44MSA1LjYzQzExLjkzIDQuNzYgMTAuNzcgNC43NiA5Ljg5IDUuNjNsLTEuMTggMS4xOEw4LjAwIDkuNjdDNy4yMSAxMC40NiA2LjEwIDEwLjQ2IDUuMjEgOS42N0wyLjA5IDYuNTVDMS4zMSA1Ljc3IDEuMzEgNC42NiAyLjA5IDMuODguOTcgMy4wOSAxLjAwIDEuOTMgMi4wOSA3Ljg5IDMuODguMDFNMi41MSA1LjE3TDYuOTMgOS41OSIvPjwvc3ZnPg==');
+            background-repeat: no-repeat;
+            background-position: 95% center;
+            cursor: pointer;
+        }
+
+        input[type="date"]::-webkit-calendar-picker-indicator {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+            opacity: 0;
+            /* Hide default calendar icon */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="date-input-container">
+        <input type="date" id="date-input" name="date-input">
+    </div>
+
+</body>
+
+</html>
